@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "page/home/home",
+    "page/route/route",
+    "page/service/service",
+    "page/me/me",
+    "page/detail/detail",
+    "page/category/category"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "延安保卫培训中心",
+    "navigationBarBackgroundColor": "#fbf9fe",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#2786fd",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+        "text": "培训课程",
+        "pagePath": "page/home/home",
+        "iconPath": "image/home.png",
+        "selectedIconPath": "image/home1.png"
+      },
+      {
+        "text": "旅游路线",
+        "pagePath": "page/route/route",
+        "iconPath": "image/route.png",
+        "selectedIconPath": "image/route1.png"
+      },
+      {
+        "text": "客服中心",
+        "pagePath": "page/service/service",
+        "iconPath": "image/service.png",
+        "selectedIconPath": "image/service1.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "page/me/me",
+        "iconPath": "image/me.png",
+        "selectedIconPath": "image/me1.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

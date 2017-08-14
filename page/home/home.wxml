@@ -1,0 +1,38 @@
+<template name="head">
+  <view class="flex-row flex-center widthMargin head">
+    <view class="headLine"></view>
+    <view class="flex-row flex-center headBox">
+      <text class="headText">{{title}}</text>
+    </view>
+  </view>
+</template>
+<swiper indicator-dots autoplay>
+  <swiper-item wx:for="{{swipers}}" wx:key="{{index}}" bindtap="swiperTap" data-articleId="{{item.articleId}}">
+    <image class="swiper-item" src="{{item.image}}" mode="aspectFill"  />
+  </swiper-item>
+</swiper>
+<template is="head" data="{{title:'产品分类'}}"  />
+<view class="category flex-row flex-wrap">
+  <view class="categoryBox" wx:for="{{category}}" wx:key="{{index}}" data-categoryId="{{item.categoryId}}"
+        bindtap="toCategory">
+    <view class="flex-row flex-center categoryName">
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+</view>
+<template is="head" data="{{title:'今日推荐'}}"  />
+<view class="flex-row flex-center tab">
+  <view class="flex-row flex-center tabBar tabLeft {{currentTab=='course' ? 'active':''}}" bindtap="selectCourse">课程</view>
+  <view class="flex-row flex-center tabBar tabRight {{currentTab=='scenery' ? 'active':''}}" bindtap="selectScenery">景点</view>
+</view>
+<view class="flex-column widthMargin item" wx:for="{{content}}" wx:key="{{index}}" bindtap="swiperTap" data-articleId="{{item.articleId}}">
+  <image class="itemImg" src="{{item.image}}" mode="widthFix"  />
+  <view class="flex-row flex-between itemName">
+    <text class="text-ellipsis itemTitle">{{item.title}}</text>
+    <view>
+      <text class="itemDiscount">优惠价:{{item.discount}}</text>
+      <text class="itemPrice">{{item.price}}</text>
+    </view>
+  </view>
+  <view class="text-ellipsis itemBrief">{{item.brief}}</view>
+</view>

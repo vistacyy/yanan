@@ -1,0 +1,64 @@
+.tab {
+  height: 90rpx;
+}
+
+.tabbox {
+  height: 90rpx;
+  color: #666;
+  font-size: 28rpx;
+  border-bottom: 1px solid #999;
+}
+
+.tabItem {
+  width: 150rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  height: 90rpx;
+}
+
+.active {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+.content {
+  height: 1000rpx;
+}
+
+.item {
+  height: 102px;
+  margin-top: 10px;
+}
+
+.itemLeft {
+  width: 135px;
+  height: 102px;
+}
+
+.itemRight {
+  width: 135px;
+  border: 1px solid #999;
+  border-left-color: #fff;
+  color: #333;
+  font-size: 16px;
+  padding: 3px;
+}
+
+.itemTitle {
+  -webkit-line-clamp: 1;
+}
+
+.itemContent {
+  -webkit-line-clamp: 2;
+}
+
+.itemOther {
+  font-size: 11px;
+  color: #666;
+}
+
+.itemImg {
+  width: 15px;
+  height: 15px;
+  margin-right: 3px;
+}
