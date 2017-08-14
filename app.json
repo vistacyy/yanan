@@ -1,11 +1,10 @@
 {
   "pages": [
     "page/home/home",
-    "page/route/route",
+    "page/category/category",
     "page/service/service",
     "page/me/me",
-    "page/detail/detail",
-    "page/category/category"
+    "page/detail/detail"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -28,9 +27,9 @@
       },
       {
         "text": "旅游路线",
-        "pagePath": "page/route/route",
-        "iconPath": "image/route.png",
-        "selectedIconPath": "image/route1.png"
+        "pagePath": "page/category/category",
+        "iconPath": "image/category.png",
+        "selectedIconPath": "image/category1.png"
       },
       {
         "text": "客服中心",

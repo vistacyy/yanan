@@ -12,20 +12,22 @@
   </swiper-item>
 </swiper>
 <template is="head" data="{{title:'产品分类'}}"  />
-<view class="category flex-row flex-wrap">
-  <view class="categoryBox" wx:for="{{category}}" wx:key="{{index}}" data-categoryId="{{item.categoryId}}"
+<view class="category flex-row flex-wrap widthMargin">
+  <view class="categoryBox flex-column " wx:for="{{category}}" wx:key="{{index}}" data-categoryid="{{item.categoryid}}"
         bindtap="toCategory">
-    <view class="flex-row flex-center categoryName">
-      <text>{{item.name}}</text>
+    <view class="categoryImgBox flex-row flex-center" style="background:{{item.bgcolor}}">
+      <image src="{{item.logo}}" mode="aspectFit" class="categoryImg"  />
     </view>
+    <view class="flex-row flex-center categoryName">{{item.name}}</view>
   </view>
 </view>
 <template is="head" data="{{title:'今日推荐'}}"  />
-<view class="flex-row flex-center tab">
-  <view class="flex-row flex-center tabBar tabLeft {{currentTab=='course' ? 'active':''}}" bindtap="selectCourse">课程</view>
-  <view class="flex-row flex-center tabBar tabRight {{currentTab=='scenery' ? 'active':''}}" bindtap="selectScenery">景点</view>
+<view class="flex-row flex-center widthMargin tab">
+  <view class="flex-row flex-center tabBar tabLeft {{currentTab=='course' ? 'active':''}}" bindtap="selectCourse">课 程</view>
+  <view class="flex-row flex-center tabBar tabRight {{currentTab=='scenery' ? 'active':''}}" bindtap="selectScenery">景 点</view>
 </view>
-<view class="flex-column widthMargin item" wx:for="{{content}}" wx:key="{{index}}" bindtap="swiperTap" data-articleId="{{item.articleId}}">
+<view class="flex-column widthMargin item" wx:for="{{content}}" wx:key="{{index}}" bindtap="swiperTap"
+      data-articleId="{{item.articleId}}">
   <image class="itemImg" src="{{item.image}}" mode="widthFix"  />
   <view class="flex-row flex-between itemName">
     <text class="text-ellipsis itemTitle">{{item.title}}</text>

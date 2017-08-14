@@ -1,2 +1,33 @@
-<!--page/service/index.wxml-->
-<text>page/service/index.wxml</text>
+<scroll-view scroll-x class="tab">
+    <view class="tabbox flex-row" style="width:{{tabWidth}}rpx">
+        <view class="tabItem flex-row flex-center {{currentTab==index ? 'active' : ''}}" wx:for="{{category}}"
+                wx:key="{{index}}" data-categoryid="{{item.categoryid}}" bindtap="switchTab">
+            <text>{{item.name}}</text>
+        </view>
+    </view>
+</scroll-view>
+
+<scroll-view scroll-y class="content" bindscrolltoupper="upper" bindscrolltolower="lower">
+    <view class="item flex-row widthMargin" hidden="{{currentTab=='0' ? '' : true}}" wx:for="{{lists}}"
+          wx:key="{{index}}" bindtap="swiperTap">
+        <image class="itemLeft" src="/image/choice1.png" mode="aspectFit"  />
+        <view class="itemRight flex-column flex-between flex-1">
+            <text class="text-ellipsis itemTitle">标标题标题标标题标标题标标题标题标题标题题</text>
+            <text class="text-ellipsis itemContent">内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍</text>
+            <view class="itemOther flex-row flex-between">
+                <view class="flex-row align-center">
+                    <image class="itemImg" src="/image/calendar2.png" mode="aspectFit"  />
+                    <text>2017-08-13</text>
+                </view>
+                <view class="flex-row align-center">
+                    <image class="itemImg" src="/image/read2.png" mode="aspectFit"  />
+                    <text>554</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="" hidden="{{currentTab=='1' ? '' : true}}">
+        <text>生活</text>
+    </view>
+
+</scroll-view>

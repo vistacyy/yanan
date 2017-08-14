@@ -1,20 +1,28 @@
 App({
   data: {
     category: [{
-        categoryId: '0',
-        name: '资讯中心'
+        categoryid: '0',
+        name: '资讯中心',
+        logo: '/image/cate1.png',
+        bgcolor: '#32b324'
       },
       {
-        categoryId: '1',
-        name: '精品线路'
+        categoryid: '1',
+        name: '精品线路',
+        logo: '/image/cate2.png',
+        bgcolor: '#f1c40e'
       },
       {
-        categoryId: '2',
-        name: '培训课程'
+        categoryid: '2',
+        name: '培训课程',
+        logo: '/image/cate3.png',
+        bgcolor: '#ea65a2'
       },
       {
-        categoryId: '3',
-        name: '我的'
+        categoryid: '3',
+        name: '我的',
+        logo: '/image/cate4.png',
+        bgcolor: '#aa99ff'
       }
     ],
     course: [{
@@ -49,9 +57,10 @@ App({
   // 小程序启动时提取首页数据
   onLaunch: function(options) {
     // console.log("app launched ", options);
-
   },
+
   globalData: {
-    windowHeight: wx.getSystemInfoSync().windowHeight
+    windowHeight: wx.getSystemInfoSync().windowHeight,
+    categoryid: '0'
   }
 })

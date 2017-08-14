@@ -34,25 +34,28 @@ swiper {
   color: #333;
 }
 
-.category {
-  margin: auto 50rpx;
-  width: 630rpx;
-}
+.category {}
 
 .categoryBox {
-  width: 50%;
-  height: 90rpx;
-  margin: 5rpx 0;
+  width: 25%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.categoryImgBox {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.categoryImg {
+  width: 40px;
+  height: 40px;
 }
 
 .categoryName {
-  height: 90rpx;
-  border: 1px solid 999;
-  border-radius: 10rpx;
-  background: #f9a54d;
-  font-size: 20px;
-  color: #fff;
-  margin: 0 10rpx;
+  font-size: 16px;
+  margin-top: 5px;
 }
 
 .tab {
@@ -61,12 +64,12 @@ swiper {
 
 .tabBar {
   height: 70rpx;
-  width: 110rpx;
+  width: 50%;
   background: #eee;
+  word-spacing: 10px;
 }
 
 .tabLeft {
-  margin-right: 40rpx;
   border-radius: 20rpx 0 0 20rpx;
 }
 

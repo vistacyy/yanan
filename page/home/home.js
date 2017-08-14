@@ -22,7 +22,7 @@ Page({
   },
 
   onLoad: function() {
-    console.log('appInstance', appInstance);
+    // console.log('appInstance', appInstance);
   },
 
   // TODO:点击轮播图进入相应的文章页面
@@ -36,8 +36,9 @@ Page({
   // TODO:进分类列表
   toCategory: function(e) {
     console.log('toCategory', e);
-    wx.navigateTo({
-      url: '/page/category/category?categoryId=' + e.currentTarget.dataset.categoryId,
+    appInstance.globalData.categoryid = e.currentTarget.dataset.categoryid;
+    wx.switchTab({
+      url: '/page/category/category'
     });
   },
   // 切换TAB时，更新列表数据
