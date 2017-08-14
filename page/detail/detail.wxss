@@ -8,13 +8,31 @@
   left: 0;
   right: 0;
   bottom: 0;
-  display: block;
-  text-align: center;
-  border-top: 1px solid #ccc;
-  background-color: red;
   -webkit-user-select: none;
   user-select: none;
   font-size: 0;
   overflow: hidden;
   z-index: 2;
+}
+
+.barItem {
+  height: 45px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.left {
+  background: #B10B79;
+  flex-grow: 4;
+}
+
+.right {
+  background: #2DBACC;
+  flex-grow: 1;
+}
+
+.barImg {
+  height: 28px;
+  width: 28px;
+  margin-right: 6px;
 }

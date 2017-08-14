@@ -1,5 +1,14 @@
 <import src="../../wxParse/wxParse.wxml"  />
 <view class="wxParse detail" >
     <template is="wxParse" data="{{wxParseData:article.nodes}}"  />
-    <view class="bottomBar"></view>
+    <view class=" flex-row align-center bottomBar">
+        <view class="flex-row flex-center barItem left">
+            <image src="/image/booking.png" class="barImg" />
+            <text>我要预约</text>
+        </view>
+        <view class="flex-row flex-center  barItem right">
+            <image src="/image/customer_service.png" class="barImg" />
+            <text>客服</text>
+        </view>
+    </view>
 </view>

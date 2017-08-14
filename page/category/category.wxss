@@ -1,3 +1,7 @@
+page {
+  background: #eee;
+}
+
 .tab {
   height: 90rpx;
 }
@@ -6,7 +10,7 @@
   height: 90rpx;
   color: #666;
   font-size: 28rpx;
-  border-bottom: 1px solid #999;
+  background: #fff;
 }
 
 .tabItem {
@@ -17,8 +21,8 @@
 }
 
 .active {
-  color: red;
-  border-bottom: 2px solid red;
+  color: #33BBAF;
+  border-bottom: 2px solid #33BBAF;
 }
 
 .content {
@@ -28,6 +32,7 @@
 .item {
   height: 102px;
   margin-top: 10px;
+  background: #fff;
 }
 
 .itemLeft {
@@ -45,6 +50,7 @@
 }
 
 .itemTitle {
+  font-size: 18px;
   -webkit-line-clamp: 1;
 }
 

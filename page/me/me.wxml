@@ -1,2 +1,15 @@
-<!--page/me/index.wxml-->
-<text>page/me/index.wxml</text>
+<view class="flex-row align-center me">
+    <image src="/image/my-photo.png" class="meImg"  mode="aspectFill"/>
+    <view class="flex-row flex-center meBox">
+        <image src="{{userInfo.avatarUrl}}" mode="aspectFit" class="head" />
+        <text>{{userInfo.nickName}}</text>
+    </view>
+</view>
+
+
+<view class="tabbox flex-row">
+    <view class="tabItem flex-row flex-center {{currentTab==index ? 'active' : ''}}" wx:for="{{category}}"
+          wx:key="{{index}}" data-categoryid="{{item.categoryid}}" bindtap="switchTab">
+        <text>{{item.name}}</text>
+    </view>
+</view>

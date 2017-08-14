@@ -7,16 +7,16 @@
     "page/detail/detail"
   ],
   "window": {
-    "navigationBarTextStyle": "black",
+    "navigationBarTextStyle": "light",
     "navigationBarTitleText": "延安保卫培训中心",
-    "navigationBarBackgroundColor": "#fbf9fe",
+    "navigationBarBackgroundColor": "#33BBAF",
     "backgroundColor": "#fff",
-    "backgroundTextStyle": "dark",
+    "backgroundTextStyle": "light",
     "enablePullDownRefresh": false
   },
   "tabBar": {
     "color": "#999999",
-    "selectedColor": "#2786fd",
+    "selectedColor": "#33BBAF",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "list": [{
