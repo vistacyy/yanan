@@ -54,5 +54,12 @@ Page({
       currentTab: 'scenery',
       content: appInstance.data.scenery,
     });
+  },
+  // 转发
+  onShareAppMessage: function() {
+    return {
+      title: '测试',
+      path: '/page/home/home'
+    }
   }
 })

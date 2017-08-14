@@ -1,2 +1,1 @@
-<!--page/service/index.wxml-->
-<text>page/service/index.wxml</text>
+<button type="primary" open-type="contact">联系客服</button>
