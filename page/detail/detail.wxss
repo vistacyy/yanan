@@ -1,7 +1,20 @@
-page {
-  height: 100%;
+.detail {
+  padding-bottom: 55px;
 }
 
-.detail {
-  height: calc(100%-45rpx);
+.bottomBar {
+  height: 45px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  background-color: red;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 0;
+  overflow: hidden;
+  z-index: 2;
 }

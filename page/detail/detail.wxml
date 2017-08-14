@@ -1,5 +1,5 @@
-<import src="../../wxParse/wxParse.wxml"/> 
-<scroll-view scroll-y class="wxParse" style="height:{{htmlHeight}}px">
-    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
-</scroll-view>
-<view style="height:45px;background:red;"></view>
+<import src="../../wxParse/wxParse.wxml"  />
+<view class="wxParse detail" >
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"  />
+    <view class="bottomBar"></view>
+</view>

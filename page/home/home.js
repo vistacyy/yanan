@@ -35,7 +35,7 @@ Page({
 
   // TODO:进分类列表
   toCategory: function(e) {
-    console.log('toCategory', e);
+    // console.log('toCategory', e);
     appInstance.globalData.categoryid = e.currentTarget.dataset.categoryid;
     wx.switchTab({
       url: '/page/category/category'
