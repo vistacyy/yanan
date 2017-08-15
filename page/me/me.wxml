@@ -6,10 +6,10 @@
     </view>
 </view>
 
-
-<view class="tabbox flex-row">
-    <view class="tabItem flex-row flex-center {{currentTab==index ? 'active' : ''}}" wx:for="{{category}}"
-          wx:key="{{index}}" data-categoryid="{{item.categoryid}}" bindtap="switchTab">
-        <text>{{item.name}}</text>
+<view class="weui-cell" hover-class="weui-cell_active" bindtap="order">
+    <view class="weui-cell__hd">
+        <image src="/image/order.png" class="icon"></image>
     </view>
+    <view class="weui-cell__bd">全部订单</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access">查看</view>
 </view>

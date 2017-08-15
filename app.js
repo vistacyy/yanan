@@ -1,5 +1,6 @@
 App({
   data: {
+    // 以下为模拟数据
     category: [{
         categoryid: '0',
         name: '资讯中心',
@@ -20,7 +21,7 @@ App({
       },
       {
         categoryid: '3',
-        name: '我的',
+        name: '公司风采',
         logo: '/image/cate4.png',
         bgcolor: '#aa99ff'
       }

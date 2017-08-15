@@ -1,66 +1,36 @@
-// page/service/index.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-  
+  data: {},
+  map: function() {
+    wx.openLocation({
+      latitude: 33.4341,
+      longitude: 114.5222,
+      name: '延安保卫培训中心',
+      address: '周口市XXXXXXXXXXXXX'
+    });
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
+  phone: function() {
+    wx.showActionSheet({
+      itemColor: '#666',
+      itemList: [
+        '0394-000000',
+        '13500000000'
+      ],
+      success: function(res) {
+        var phone = '';
+        switch (res.tapIndex) {
+          case 0:
+            phone = '03940000000';
+            break;
+          case 1:
+            phone = '13500000000';
+            break;
+          default:
+            phone = '03940000000';
+        }
+        wx.makePhoneCall({
+          phoneNumber: phone
+        });
+      }
+    });
   }
-})
+});

@@ -1,3 +1,27 @@
-<button type="primary" open-type="contact">联系客服</button>
+<view class="flex-column container">
+<view class="flex-column flex-center company ">
+    <image class="companyName" src="/image/name.png"  />
+</view>
+<view class="weui-cell" hover-class="weui-cell_active" bindtap="map">
+    <view class="weui-cell__hd">
+        <image src="/image/address.png" class="icon"></image>
+    </view>
+    <view class="weui-cell__bd">公司地址</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access">查看地图</view>
+</view>
+<view class="weui-cell" hover-class="weui-cell_active" bindtap="phone">
+    <view class="weui-cell__hd">
+        <image src="/image/phone.png" class="icon"></image>
+    </view>
+    <view class="weui-cell__bd">客服电话</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access">点击拨打</view>
+</view>
 
+<view class="flex-1 flex-column flex-center">
+<button open-type="contact"  class="flex-column flex-center contact" >
+    <image  class="contactImg" src="/image/wechat.png"  />
+    <text>在线客服</text>
+</button>
+</view>
+</view>
 

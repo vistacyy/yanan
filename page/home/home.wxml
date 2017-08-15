@@ -6,12 +6,42 @@
     </view>
   </view>
 </template>
+
+
+
+
+<!--搜索-->
+<view>
+    <view class="weui-search-bar">
+        <view class="weui-search-bar__form">
+            <view class="weui-search-bar__box">
+                <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}"
+                       focus="{{inputShowed}}" bindinput="inputTyping"  />
+                <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                    <icon type="clear" size="14"></icon>
+                </view>
+            </view>
+            <view class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                <icon class="weui-icon-search" type="search" size="14"></icon>
+                <view class="weui-search-bar__text">搜索</view>
+            </view>
+        </view>
+        <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+    </view>
+    <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+        <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+            <view class="weui-cell__bd">实时搜索文本</view>
+        </navigator>
+    </view>
+</view>
+<!--轮播-->
 <swiper indicator-dots autoplay>
   <swiper-item wx:for="{{swipers}}" wx:key="{{index}}" bindtap="swiperTap" data-articleId="{{item.articleId}}">
     <image class="swiper-item" src="{{item.image}}" mode="aspectFill"  />
   </swiper-item>
 </swiper>
-<template is="head" data="{{title:'产品分类'}}"  />
+<!--分类-->
 <view class="category flex-row flex-wrap widthMargin">
   <view class="categoryBox flex-column " wx:for="{{category}}" wx:key="{{index}}" data-categoryid="{{item.categoryid}}"
         bindtap="toCategory">
@@ -21,6 +51,7 @@
     <view class="flex-row flex-center categoryName">{{item.name}}</view>
   </view>
 </view>
+<!--推荐-->
 <template is="head" data="{{title:'今日推荐'}}"  />
 <view class="flex-row flex-center widthMargin tab">
   <view class="flex-row flex-center tabBar tabLeft {{currentTab=='course' ? 'active':''}}" bindtap="selectCourse">课 程</view>

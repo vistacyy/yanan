@@ -1,6 +1,8 @@
 let appInstance = getApp();
 Page({
   data: {
+    inputShowed: false,
+    inputVal: "",
     currentTab: 'course',
     content: appInstance.data.course,
     // 模拟数据
@@ -24,7 +26,28 @@ Page({
   onLoad: function() {
     // console.log('appInstance', appInstance);
   },
-
+  // 搜索相关
+  showInput: function() {
+    this.setData({
+      inputShowed: true
+    });
+  },
+  hideInput: function() {
+    this.setData({
+      inputVal: "",
+      inputShowed: false
+    });
+  },
+  clearInput: function() {
+    this.setData({
+      inputVal: ""
+    });
+  },
+  inputTyping: function(e) {
+    this.setData({
+      inputVal: e.detail.value
+    });
+  },
   // TODO:点击轮播图进入相应的文章页面
   swiperTap: function(e) {
     // console.log('swiperchange',e);
