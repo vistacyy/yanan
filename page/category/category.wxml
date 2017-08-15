@@ -1,16 +1,15 @@
 <scroll-view scroll-x class="tab">
     <view class="tabbox flex-row" style="width:{{tabWidth}}rpx">
         <view class="tabItem flex-row flex-center {{currentTab==index ? 'active' : ''}}" wx:for="{{category}}"
-                wx:key="{{index}}" data-categoryid="{{item.categoryid}}" bindtap="switchTab">
+              wx:key="{{index}}" data-categoryid="{{item.categoryid}}" bindtap="switchTab">
             <text>{{item.name}}</text>
         </view>
     </view>
 </scroll-view>
-
 <scroll-view scroll-y class="content" bindscrolltoupper="upper" bindscrolltolower="lower">
     <view class="item flex-row widthMargin" hidden="{{currentTab=='0' ? '' : true}}" wx:for="{{lists}}"
           wx:key="{{index}}" bindtap="swiperTap">
-        <image class="itemLeft" src="/image/choice1.png" mode="aspectFit"  />
+        <image class="itemLeft" src="/image/choice2.jpg" mode="aspectFit"  />
         <view class="itemRight flex-column flex-between flex-1">
             <text class="text-ellipsis itemTitle">标标题标题标标题标标题标标题标题标题标题题</text>
             <text class="text-ellipsis itemContent">内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍</text>
@@ -26,8 +25,18 @@
             </view>
         </view>
     </view>
+    
     <view class="" hidden="{{currentTab=='1' ? '' : true}}">
         <text>生活</text>
     </view>
 
+    <view class="" hidden="{{currentTab=='3' ? '' : true}}">
+        <view class="flex-row flex-wrap video">
+            <view class="flex-column flex-between align-center videoItem" wx:for="{{video}}" wx:key="{{index}}"
+                  date-videoid="{{item.videoid}}"  bindtap="swiperTap">
+                <image src="{{item.image}}" class="videoImg" mode="aspectFill"  />
+                <text class="text-ellipsis videoText">{{item.name}}</text>
+            </view>
+        </view>
+    </view>
 </scroll-view>

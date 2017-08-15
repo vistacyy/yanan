@@ -18,9 +18,9 @@
 </view>
 
 <view class="flex-1 flex-column flex-center">
-<button open-type="contact"  class="flex-column flex-center contact" >
+<button open-type="contact" plain  class="flex-column flex-center contact" >
     <image  class="contactImg" src="/image/wechat.png"  />
-    <text>在线客服</text>
+    <text class="contactText">在线客服</text>
 </button>
 </view>
 </view>

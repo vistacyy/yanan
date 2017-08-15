@@ -1,9 +1,12 @@
 page {
   background: #eee;
+  height: 100%;
 }
 
 .tab {
   height: 90rpx;
+  position: fixed;
+  z-index: 2;
 }
 
 .tabbox {
@@ -26,13 +29,15 @@ page {
 }
 
 .content {
-  height: 1000rpx;
+  height: 100%;
+  padding-top: 90rpx;
 }
 
 .item {
   height: 102px;
   margin-top: 10px;
   background: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .6);
 }
 
 .itemLeft {
@@ -42,8 +47,6 @@ page {
 
 .itemRight {
   width: 135px;
-  border: 1px solid #999;
-  border-left-color: #fff;
   color: #333;
   font-size: 16px;
   padding: 3px;
@@ -67,4 +70,31 @@ page {
   width: 15px;
   height: 15px;
   margin-right: 3px;
+}
+
+.video {
+  width: 100%;
+  margin: 20rpx 10rpx 0 10rpx;
+}
+
+.videoItem {
+  width: 223.33rpx;
+  margin: 0 10rpx 20rpx 10rpx;
+  background: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .6);
+}
+
+.videoImg {
+  width: 100%;
+  height: 300rpx;
+}
+
+.videoText {
+  margin: 5px auto;
+  width: 100%;
+  height: 16px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  -webkit-line-clamp: 1;
 }

@@ -4,7 +4,8 @@
     "page/category/category",
     "page/service/service",
     "page/me/me",
-    "page/detail/detail"
+    "page/detail/detail",
+    "page/order/order"
   ],
   "window": {
     "navigationBarTextStyle": "light",

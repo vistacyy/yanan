@@ -41,9 +41,9 @@ Page({
     });
   },
 
-  switchTab: function(e) {
-    this.setData({
-      currentTab: e.currentTarget.dataset.categoryid
+  order: function(e) {
+    wx.navigateTo({
+      url: '/page/order/order'
     });
   },
 

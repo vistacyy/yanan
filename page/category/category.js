@@ -9,7 +9,33 @@ Page({
     currentLength: 5,
     lists: [],
     category: appInstance.data.category,
-    tabWidth: appInstance.data.category.length * 186
+    tabWidth: appInstance.data.category.length * 186,
+    video: [{
+        videoid: '0',
+        name: '速度与激情8速度与激情8速度与激情8速度与激情8速度与激情8',
+        image: '/image/video.jpg'
+      },
+      {
+        videoid: '1',
+        name: '速度与激情8',
+        image: '/image/video.jpg'
+      },
+      {
+        videoid: '2',
+        name: '速度与激情8',
+        image: '/image/video.jpg'
+      },
+      {
+        videoid: '3',
+        name: '速度与激情8',
+        image: '/image/video.jpg'
+      },
+      {
+        videoid: '4',
+        name: '速度与激情8',
+        image: '/image/video.jpg'
+      }
+    ],
   },
 
   lists1: [{

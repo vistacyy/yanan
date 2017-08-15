@@ -1,0 +1,36 @@
+page {
+  background: #eee;
+  height: 100%;
+}
+
+.content {
+  height: 100%;
+}
+
+.item {
+  height: 102px;
+  margin-top: 10px;
+  background: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .6);
+}
+
+.itemLeft {
+  width: 135px;
+  height: 102px;
+}
+
+.itemRight {
+  width: 135px;
+  color: #333;
+  font-size: 16px;
+  padding: 3px;
+}
+
+.itemTitle {
+  font-size: 18px;
+  -webkit-line-clamp: 1;
+}
+
+.itemContent {
+  -webkit-line-clamp: 2;
+}

@@ -1,0 +1,10 @@
+<scroll-view scroll-y class="content" bindscrolltoupper="upper" bindscrolltolower="lower">
+    <view class="item flex-row widthMargin">
+        <image class="itemLeft" src="/image/choice2.jpg" mode="aspectFit"  />
+        <view class="itemRight flex-column flex-between flex-1">
+            <text class="text-ellipsis itemTitle">标标题标题标标题标标题标标题标题标题标题题</text>
+            <text class=" itemTime">下单时间:2017-08-15</text>
+            <text class=" itemMoney">金额:¥299.00</text>
+        </view>
+    </view>
+</scroll-view>
