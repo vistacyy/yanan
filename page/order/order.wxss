@@ -23,14 +23,21 @@ page {
   width: 135px;
   color: #333;
   font-size: 16px;
-  padding: 3px;
+  padding: 6px 3px;
 }
 
 .itemTitle {
   font-size: 18px;
+  color: #333;
   -webkit-line-clamp: 1;
 }
 
-.itemContent {
-  -webkit-line-clamp: 2;
+.itemTime {
+  font-size: 14px;
+  color: #666;
+}
+
+.itemMoney {
+  font-size: 14px;
+  color: red;
 }
