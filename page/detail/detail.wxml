@@ -1,5 +1,10 @@
 <import src="../../wxParse/wxParse.wxml"  />
 <view class="wxParse detail" >
+    <view class="head text-ellipsis">文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题文章标题</view>
+    <view class="flex-row flex-between headInfo">
+        <text>分类名称 2017-08-18</text>
+        <text>阅读人数：666</text>
+    </view>
     <template is="wxParse" data="{{wxParseData:article.nodes}}"  />
     <view class=" flex-row align-center bottomBar">
         <view class="flex-row flex-center barItem left">

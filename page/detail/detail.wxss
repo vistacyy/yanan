@@ -2,6 +2,20 @@
   padding-bottom: 55px;
 }
 
+.head {
+  -webkit-text-clamp: 2;
+  font-size: 20px;
+  color: #333;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.headInfo {
+  padding: 10px;
+  font-size: 10px;
+  color: #999;
+}
+
 .bottomBar {
   height: 45px;
   position: fixed;

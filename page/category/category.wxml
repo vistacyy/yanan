@@ -33,7 +33,7 @@
     <view class="" hidden="{{currentTab=='3' ? '' : true}}">
         <view class="flex-row flex-wrap video">
             <view class="flex-column flex-between align-center videoItem" wx:for="{{video}}" wx:key="{{index}}"
-                  date-videoid="{{item.videoid}}"  bindtap="swiperTap">
+                  date-videoid="{{item.videoid}}"  bindtap="showVideo">
                 <image src="{{item.image}}" class="videoImg" mode="aspectFill"  />
                 <text class="text-ellipsis videoText">{{item.name}}</text>
             </view>

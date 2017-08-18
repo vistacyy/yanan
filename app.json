@@ -5,7 +5,8 @@
     "page/service/service",
     "page/me/me",
     "page/detail/detail",
-    "page/order/order"
+    "page/order/order",
+    "page/video/video"
   ],
   "window": {
     "navigationBarTextStyle": "light",

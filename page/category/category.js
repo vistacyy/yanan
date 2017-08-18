@@ -188,5 +188,11 @@ Page({
       url: '/page/detail/detail?articleId=' + e.currentTarget.dataset.articleid,
     });
   },
+  showVideo: function(e) {
+    // console.log('swiperchange',e);
+    wx.navigateTo({
+      url: '/page/video/video?articleId=' + e.currentTarget.dataset.articleid,
+    });
+  },
 
 })
